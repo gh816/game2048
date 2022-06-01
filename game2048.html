@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="./jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="./game2048.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+		<div class="all">
+			<div class="left">
+				<div class="div-round" id="tips">↑(W)/↓(S)/←(A)/→(D)控制方向</div>
+				<div style="clear:both"></div>
+				<div id="score" class="div-round">
+					总分数:00
+				</div>
+				<div id="max" class="div-round">
+					当前最大数:
+				</div>
+				<div id="time" class="div-round">
+					当前用时: 0s。
+				</div>
+				<!-- 提示快结束 -->
+				<div id="danger">
+				</div>
+				<!-- 点击按钮重新开始  -->
+				<div style="width:200px;margin: 50px auto;">
+					<input type="button" value="开始" class="btn btn-primary" onClick="init()">
+					<input type="button" value="重新开始" class="btn btn-primary" onClick="if(window.confirm('您确定重新开始吗?')){init();}">
+				</div>
+			</div>
+			<div class="right">
+				<div id="game-panel">
+					<div class="div-round" id="box-main">
+						<div class="div-round box-lm" id="box0"></div>
+						<div class="div-round box-lm" id="box1"></div>
+						<div class="div-round box-lm" id="box2"></div>
+						<div class="div-round box-lm" id="box3"></div>
+						<div class="div-round box-lm" id="box4"></div>
+						<div class="div-round box-lm" id="box5"></div>
+						<div class="div-round box-lm" id="box6"></div>
+						<div class="div-round box-lm" id="box7"></div>
+						<div class="div-round box-lm" id="box8"></div>
+						<div class="div-round box-lm" id="box9"></div>
+						<div class="div-round box-lm" id="box10"></div>
+						<div class="div-round box-lm" id="box11"></div>
+						<div class="div-round box-lm" id="box12"></div>
+						<div class="div-round box-lm" id="box13"></div>
+						<div class="div-round box-lm" id="box14"></div>
+						<div class="div-round box-lm" id="box15"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
